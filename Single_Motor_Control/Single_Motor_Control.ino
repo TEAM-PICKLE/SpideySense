@@ -1,12 +1,24 @@
-const int pin = 3; // GPIO pin 3
+int ledPin = 3;    // LED connected to digital pin 10
 
 void setup() {
-  pinMode(pin, OUTPUT); // Set pin 3 as an output
+  // declaring LED pin as output
+  pinMode(ledPin, OUTPUT);
 }
 
 void loop() {
-  digitalWrite(pin, HIGH); // Turn the pin ON
-  delay(200);             // Wait for 1 second
-  digitalWrite(pin, LOW);  // Turn the pin OFF
-  delay(1000);             // Wait for 1 second
+  // fade in from min to max in increments of 5 points:
+  for (int fadeValue = 0 ; fadeValue <= 255; fadeValue += 5) {
+    // sets the value (range from 0 to 255):
+    analogWrite(ledPin, fadeValue);
+    // wait for 30 milliseconds to see the dimming effect
+    delay(30);
+  }
+
+  // fade out from max to min in increments of 5 points:
+  for (int fadeValue = 255 ; fadeValue >= 0; fadeValue -= 5) {
+    // sets the value (range from 0 to 255):
+    analogWrite(ledPin, fadeValue);
+    // wait for 30 milliseconds to see the dimming effect
+    delay(30);
+  }
 }

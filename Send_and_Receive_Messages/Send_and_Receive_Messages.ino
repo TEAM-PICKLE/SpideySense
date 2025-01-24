@@ -1,24 +1,18 @@
 #include <WiFi.h>
 
-const char* ssid = "Pickle";
-const char* password = "12345678";
+// Declare the server here
+WiFiServer server(80);  // Declare server to handle the connection
+
 char PING[] = "PING";
-WiFiServer server(80);
 int loops = 0;
 
+// Call Setup_Wifi() from the WifiSetup.ino file
 void setup() {
-  Serial.begin(115200);
-  
-  // Create Access Point
-  WiFi.softAP(ssid, password);
-  Serial.println("Access Point Started");
-  Serial.print("IP Address: ");
-  Serial.println(WiFi.softAPIP());
-  
-  server.begin();
+  Setup_Wifi();  // This will initialize the Wi-Fi network and start the server
 }
 
 void loop() {
+  // The server should be set up by now, so we can accept clients
   WiFiClient client = server.available();
   if (client) {
     Serial.println("Client connected!");
@@ -43,7 +37,7 @@ void loop() {
           client.println("SPONGE");
           Serial.println("Received " + receivedMessage);
         } else {
-          client.println("Received: " + receivedMessage+"hh");
+          client.println("Received: " + receivedMessage + "hh");
         }
       }
 
