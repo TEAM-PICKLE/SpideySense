@@ -3,28 +3,29 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class floatingText : MonoBehaviour
+public class FloatingText : MonoBehaviour
 {
     public float floatSpeed = 2f;
     public float lifetime = 3f;
-    private TextMeshProUGUI text;
+    private TextMeshProUGUI m_text;
+    private Transform vrCamera;
 
     void Start()
     {
-        text = GetComponent<TextMeshProUGUI>();
-        Destroy(gameObject, lifetime);
-        text.alpha = 0;
+        m_text = GetComponentInChildren<TextMeshProUGUI>();
+        m_text.text = GameObject.Find("ScoreManager").GetComponent<ScoreManager>().score.ToString();
+        vrCamera = Camera.main.transform;
+        Destroy(gameObject, lifetime); // Destroy after lifetime
     }
 
     void Update()
     {
+        // Move the text upwards gradually
         transform.position += Vector3.up * floatSpeed * Time.deltaTime;
-        text.alpha -= Time.deltaTime / lifetime; // Gradually fade out
+
+        // Make text face the VR player
+        transform.LookAt(transform.position + (transform.position - vrCamera.position));
     }
 
-    public void SetText(string scoreValue)
-    {
-        text.text = scoreValue;
-        text.alpha = 1;
-    }
+    //public void SetText(string scoreValue) => m_text.text = scoreValue;
 }

@@ -17,7 +17,8 @@ public class DamageComponent : MonoBehaviour
     public ParticleSystem damageParticles;
     private int playerScore;
     [SerializeField]
-    public TextMeshProUGUI floatingScoreText;
+
+    public GameObject floatingScoreText;
 
     Renderer m_renderer;
     public Color attackColor = Color.red;
@@ -29,13 +30,13 @@ public class DamageComponent : MonoBehaviour
         m_renderer = GetComponent<Renderer>();
 
         ref_ScoreManager = GameObject.Find("ScoreManager");
-        floatingScoreText=GetComponentInChildren<TextMeshProUGUI>();
+
     }
 
     private void Awake()
     {
         body = GetComponent<Rigidbody>();
-        damageParticles=GetComponentInChildren<ParticleSystem>();
+        damageParticles = GetComponentInChildren<ParticleSystem>();
     }
 
     // Update is called once per frame
@@ -44,7 +45,7 @@ public class DamageComponent : MonoBehaviour
 
     }
 
-    public void OnCollisionEnter (Collision collision)
+    public void OnCollisionEnter(Collision collision)
     {
 
         if (collision.gameObject.tag == "Player")
@@ -62,7 +63,7 @@ public class DamageComponent : MonoBehaviour
             //Play Audio
 
             //Destroy Self
-            Invoke ("DestroySelf",0.25f);
+            Invoke("DestroySelf", 0.25f);
 
         }
 
@@ -71,13 +72,14 @@ public class DamageComponent : MonoBehaviour
         {
             //Set Speed to 0
             this.gameObject.GetComponent<EnemyMovement>().enemySpeed = 0f;
-            m_renderer.material.color=decayColor;
+            m_renderer.material.color = decayColor;
 
             //update score
             ref_ScoreManager.GetComponent<ScoreManager>().AddScore(1);
-            playerScore= ref_ScoreManager.GetComponent<ScoreManager>().GetScore();
-            floatingScoreText.SetText(playerScore.ToString());
-            
+            playerScore = ref_ScoreManager.GetComponent<ScoreManager>().GetScore();
+
+            ShowFloatingText();
+
             // Play Audio
 
 
@@ -90,7 +92,20 @@ public class DamageComponent : MonoBehaviour
     {
         //Play Particles here
 
-        Destroy(this.gameObject);
+        DestroyImmediate(this.gameObject);
 
+    }
+
+    void ShowFloatingText()
+    {
+        Vector3 textPosition = transform.position + Vector3.up * .5f;  // Position above enemy
+
+        GameObject floatingText = Instantiate(floatingScoreText, textPosition, Quaternion.identity);
+
+        FloatingText textComponent = floatingText.GetComponentInChildren<FloatingText>();
+        if (textComponent != null)
+        {
+           // textComponent.SetText(playerScore.ToString());
+        }
     }
 }
