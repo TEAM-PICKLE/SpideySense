@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    public float enemySpeed = 5f;
+    public float enemySpeed;
+    public Spawner parentSpawnScript;
     [SerializeField]
     private GameObject movementTarget;
 
     void Start()
     {
+        Spawner parentSpawnScript = GetComponentInParent<Spawner>();
+        enemySpeed = parentSpawnScript.spawnSpeed;
         StartCoroutine(DestroyObject());
     }
 
