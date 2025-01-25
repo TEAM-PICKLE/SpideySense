@@ -5,12 +5,14 @@ using UnityEngine;
 public class HapticPlayer : MonoBehaviour
 {
     // this component is for controlling the vibration on each haptic location
+    // 0 for linear, 1 for damping sine wave, 2 for double peaks
     [SerializeField] HapticClipCollections hapticClipCollections;
     public float intensity=0f;
     // deltaTime = time passed after the vibration is triggered
     float deltaTime = 0;
     public bool isVibrating=false;
     HapticClip activeHapticClip;
+    public float range;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +27,7 @@ public class HapticPlayer : MonoBehaviour
 
     private void LateUpdate()
     {
+        // constant Vibrating
         if (isVibrating)
         {
             deltaTime += Time.deltaTime;
