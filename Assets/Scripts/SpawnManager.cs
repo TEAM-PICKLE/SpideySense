@@ -4,33 +4,15 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject enemyPrefab;
-
-    public bool isSpawningEnemies;
-    private float spawnCooldown;
-    [SerializeField]
-    private float minCooldown = 2f;
-    [SerializeField]
-    private float maxCooldown = 10f;
-
-    void Update()
+    // Start is called before the first frame update
+    void Start()
     {
-        // test
-        if (!isSpawningEnemies)
-        {
-            StartCoroutine(SpawnEnemy());
-        }
         
     }
 
-    IEnumerator SpawnEnemy()
+    // Update is called once per frame
+    void Update()
     {
-        // huh this is bad lol
-        spawnCooldown = Random.Range(minCooldown, maxCooldown);
-        isSpawningEnemies = true;
-        yield return new WaitForSeconds(spawnCooldown);
-        Instantiate(enemyPrefab, transform);
-        isSpawningEnemies = false;
+        
     }
 }
