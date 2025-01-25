@@ -6,5 +6,5 @@ using UnityEngine;
 public class HapticClip : ScriptableObject
 {
     public AnimationCurve hapticPattern;
-    public int duration;
+    public float duration;
 }
