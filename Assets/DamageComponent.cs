@@ -24,6 +24,18 @@ public class DamageComponent : MonoBehaviour
     public Color attackColor = Color.red;
     public Color decayColor = Color.gray;
 
+    public GameObject spawnManager;
+    public ObjectManager objManager;
+
+    private void Awake()
+    {
+        body = GetComponent<Rigidbody>();
+        damageParticles = GetComponentInChildren<ParticleSystem>();
+
+        spawnManager = GameObject.Find("SpawnRig");
+        objManager = spawnManager.GetComponent<ObjectManager>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,12 +43,6 @@ public class DamageComponent : MonoBehaviour
 
         ref_ScoreManager = GameObject.Find("ScoreManager");
 
-    }
-
-    private void Awake()
-    {
-        body = GetComponent<Rigidbody>();
-        damageParticles = GetComponentInChildren<ParticleSystem>();
     }
 
     // Update is called once per frame
@@ -91,7 +97,8 @@ public class DamageComponent : MonoBehaviour
     public void DestroySelf()
     {
         //Play Particles here
-
+        objManager.RemoveEnemy(transform);
+        Debug.Log(objManager.enemies.Count);
         DestroyImmediate(this.gameObject);
 
     }

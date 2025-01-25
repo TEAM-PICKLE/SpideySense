@@ -8,6 +8,16 @@ public class EnemyMovement : MonoBehaviour
     public Spawner parentSpawnScript;
     [SerializeField]
     private GameObject movementTarget;
+    public GameObject spawnManager;
+    public ObjectManager objManager;
+
+    private void Awake()
+    {
+        spawnManager = GameObject.Find("SpawnRig");
+        objManager = spawnManager.GetComponent<ObjectManager>();
+        objManager.AddEnemy(transform);
+        Debug.Log(objManager.enemies.Count);
+    }
 
     void Start()
     {

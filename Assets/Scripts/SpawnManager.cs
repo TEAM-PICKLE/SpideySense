@@ -18,9 +18,9 @@ public class SpawnManager : MonoBehaviour
     }
     void Update()
     {
-        if(objectManager.enemies.Count < 1)
+        if(objectManager.enemies.Count < 1) // if all the enemies are gone
         {
-            if (waveNum < waves.Length)
+            if (waveNum < waves.Length) // and we haven't finished all the waves
             {
                 SpawnWave(waveNum);
             }

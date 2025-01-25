@@ -55,6 +55,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waves:
   - {fileID: 11400000, guid: 5ff7b2a3f9a4642439f7f4031288e8c5, type: 2}
+  - {fileID: 11400000, guid: 5e7a602cb8f113748892743cf5f628ee, type: 2}
+  - {fileID: 11400000, guid: deb40b002eb870b4da53488a74f71235, type: 2}
+  - {fileID: 11400000, guid: 0c1e118c8ada7f8408f87560386c804c, type: 2}
+  - {fileID: 11400000, guid: d10db541fa17df34590f3965d255e005, type: 2}
   objectManager: {fileID: 5449318513992964679}
   spawners:
   - {fileID: 8677047038448378706}
@@ -65,7 +69,7 @@ MonoBehaviour:
   - {fileID: 2952925226807669955}
   - {fileID: 7004363215395472585}
   - {fileID: 2229200098926106258}
-  spawnSpeeds: []
+  currentSpawner: {fileID: 0}
 --- !u!114 &5449318513992964679
 MonoBehaviour:
   m_ObjectHideFlags: 0
