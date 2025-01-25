@@ -26,7 +26,7 @@ public class Spawner : MonoBehaviour
 
     IEnumerator SpawnEnemy()
     {
-        // huh this is bad lol
+        // redo to spawn when isActive
         spawnCooldown = Random.Range(minCooldown, maxCooldown);
         isSpawningEnemies = true;
         yield return new WaitForSeconds(spawnCooldown);
