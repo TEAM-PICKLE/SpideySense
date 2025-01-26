@@ -15,7 +15,7 @@ MonoBehaviour:
   activeSpawners: 0001000000000000
   enemySpeed:
   - 0.5
-  - 0.5
+  - 1
   - 0.5
   - 0.5
   - 0.5

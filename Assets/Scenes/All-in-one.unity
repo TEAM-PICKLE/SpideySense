@@ -4395,14 +4395,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -6724368330985518746, guid: a9b019c686df7e14180965448c3e485a, type: 3}
-      propertyPath: waves.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: -6724368330985518746, guid: a9b019c686df7e14180965448c3e485a, type: 3}
-      propertyPath: waves.Array.data[5]
-      value: 
-      objectReference: {fileID: 11400000, guid: b7df933c7d7773144805dc1f445c9862, type: 2}
     - target: {fileID: 463182496322257871, guid: a9b019c686df7e14180965448c3e485a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -4443,6 +4435,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2756314242429518333, guid: a9b019c686df7e14180965448c3e485a, type: 3}
+      propertyPath: hapticManager
+      value: 
+      objectReference: {fileID: 1314171329}
     - target: {fileID: 7782911489772733247, guid: a9b019c686df7e14180965448c3e485a, type: 3}
       propertyPath: m_Name
       value: SpawnRig
@@ -4450,10 +4446,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7782911489772733247, guid: a9b019c686df7e14180965448c3e485a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1155387056}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b019c686df7e14180965448c3e485a, type: 3}
 --- !u!1 &143098189
 GameObject:
@@ -33441,24 +33434,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 189d934ab5c4c084e98bb486dda5bf68, type: 3}
---- !u!1 &1155387052 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7782911489772733247, guid: a9b019c686df7e14180965448c3e485a, type: 3}
-  m_PrefabInstance: {fileID: 141548717}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1155387056
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1155387052}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e75d121f1d1fd33498969a58a78bef44, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hapticManager: {fileID: 1314171329}
 --- !u!4 &1157413909 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2904765017846874051, guid: 459d60822c092d14eb8736439a11eb01, type: 3}

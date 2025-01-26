@@ -33,7 +33,7 @@ public class EnemyMovement : MonoBehaviour
 
     IEnumerator DestroyObject()
     {
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(30f);
         this.GetComponent<DamageComponent>().DestroySelf();
     }
 }

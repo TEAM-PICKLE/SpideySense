@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 463182496322257871}
   - component: {fileID: -6724368330985518746}
   - component: {fileID: 5449318513992964679}
+  - component: {fileID: 2756314242429518333}
   m_Layer: 0
   m_Name: SpawnRig
   m_TagString: Untagged
@@ -59,6 +60,22 @@ MonoBehaviour:
   - {fileID: 11400000, guid: deb40b002eb870b4da53488a74f71235, type: 2}
   - {fileID: 11400000, guid: 0c1e118c8ada7f8408f87560386c804c, type: 2}
   - {fileID: 11400000, guid: d10db541fa17df34590f3965d255e005, type: 2}
+  - {fileID: 11400000, guid: b7df933c7d7773144805dc1f445c9862, type: 2}
+  - {fileID: 11400000, guid: 6dca172d38c9cd44b992bbd078adde7c, type: 2}
+  - {fileID: 11400000, guid: 0531cd3aca0e1a845b47984432586f6b, type: 2}
+  - {fileID: 11400000, guid: 83eb6cb5c0b9c2f49ad61f2a10f08f35, type: 2}
+  - {fileID: 11400000, guid: 8c074b40a959a43439b240bde5fe3ce4, type: 2}
+  - {fileID: 11400000, guid: da5b7a4ed1afb714fbb513c8f832ba7c, type: 2}
+  - {fileID: 11400000, guid: cd046d7c18c3b204f965c77a1e0dd044, type: 2}
+  - {fileID: 11400000, guid: 8f496094c675a3d4ea95b0940249bbea, type: 2}
+  - {fileID: 11400000, guid: 51d7bd1ef4910e346896e4b0fab204d6, type: 2}
+  - {fileID: 11400000, guid: 12bfc1a1bc7fb8248bce691a7f69fe7f, type: 2}
+  - {fileID: 11400000, guid: 3c8ac06f6f281bd4f9091d52befe26c7, type: 2}
+  - {fileID: 11400000, guid: b32524aacefca124f87f127e07108bbb, type: 2}
+  - {fileID: 11400000, guid: 9906a3f94a7565d45964b9a770618d67, type: 2}
+  - {fileID: 11400000, guid: aa008202c94e7d04f9c427d5d73b231b, type: 2}
+  - {fileID: 11400000, guid: 5737899ba71b4d74fa8f8ee10e32e5e3, type: 2}
+  - {fileID: 11400000, guid: f1f16db1e4a38184aa580e2243e0299a, type: 2}
   objectManager: {fileID: 5449318513992964679}
   spawners:
   - {fileID: 8677047038448378706}
@@ -83,6 +100,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemies: []
+--- !u!114 &2756314242429518333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7782911489772733247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e75d121f1d1fd33498969a58a78bef44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hapticManager: {fileID: 0}
 --- !u!1001 &59701278326433099
 PrefabInstance:
   m_ObjectHideFlags: 0
