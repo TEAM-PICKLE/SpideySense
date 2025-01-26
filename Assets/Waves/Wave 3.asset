@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activeSpawners: 0100000000000101
   enemySpeed:
-  - 2
+  - 1
+  - 0
+  - 1
   - 0
   - 2
   - 0
-  - 5
-  - 0
-  - 5
   - 2
+  - 1
