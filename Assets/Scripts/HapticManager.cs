@@ -2,12 +2,14 @@ using Sngty;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.PostProcessing;
 
 public class HapticManager : MonoBehaviour
 {
     public List<HapticPlayer> hapticPlayers = new List<HapticPlayer>();
     [SerializeField] SingularityManager singularityManager;
     float lowestDistance;
+    bool isDestorying = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -51,22 +53,40 @@ public class HapticManager : MonoBehaviour
     }
     void SendAll()
     {
-        for (int i = 0; i < hapticPlayers.Count; i++)
+        if (!isDestorying)
         {
-            string message = "";
-            if (hapticPlayers[i].isVibrating)
+            for (int i = 0; i < hapticPlayers.Count; i++)
             {
-                message = $"{(i + 1)}-{Mathf.FloorToInt(hapticPlayers[i].intensity * 100)}";
+                string message = "";
+                if (hapticPlayers[i] != null)
+                {
+                    if (hapticPlayers[i].isVibrating)
+                    {
+                        message = $"{(i + 1)}-{Mathf.FloorToInt(hapticPlayers[i].intensity * 100)}";
+                    }
+                    else
+                    {
+                        message = $"{(i + 1)}-{0}";
+                    }
+                    singularityManager.sendMessage(message);
+                    if (hapticPlayers[i].intensity != 1 && hapticPlayers[i].intensity != 0)
+                    {
+                        print(message);
+                    }
+                }
             }
-            else
-            {
-                message = $"{(i + 1)}-{0}";
-            }
-            singularityManager.sendMessage(message);
-            if (hapticPlayers[i].intensity!= 1 && hapticPlayers[i].intensity != 0)
-            {
-            print(message); }
-
         }
+
+    }
+
+    private void OnDestroy()
+    {
+        isDestorying = true;
+        for (int i = 0;i < 6; i++)
+        {
+            singularityManager.sendMessage($"{i+1}-{0}");
+        }
+
+
     }
 }
