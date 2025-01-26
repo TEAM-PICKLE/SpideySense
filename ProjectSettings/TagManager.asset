@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - PlayerSaber
+  - Record
   layers:
   - Default
   - TransparentFX

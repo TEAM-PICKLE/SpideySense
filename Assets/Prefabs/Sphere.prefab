@@ -147,10 +147,11 @@ MonoBehaviour:
   floatingScoreText: {fileID: 3619115845171197820, guid: 97931a275f756c040b6fa863af2343c8, type: 3}
   attackColor: {r: 1, g: 0, b: 0, a: 1}
   decayColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  spawnManager: {fileID: 0}
+  spawnManager: {fileID: 2216115294386082686}
   objManager: {fileID: 0}
   bugSplat: {fileID: 8300000, guid: 393343b1368bab4409883b06b3e14cf2, type: 3}
   catchSound: {fileID: 8300000, guid: f8f4e3c353b010d47b60a916d2bd5e10, type: 3}
+  catchHaptic: {fileID: 2460798210113038985, guid: b8674272042af75459bfed8d0f0082a9, type: 3}
 --- !u!54 &-306058099448630139
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -363,6 +364,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cea16b7abc487ba46bb1ce0d7f5cf14d, type: 3}
+--- !u!1 &2216115294386082686 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6218250860116764899, guid: cea16b7abc487ba46bb1ce0d7f5cf14d, type: 3}
+  m_PrefabInstance: {fileID: 5227152118845520797}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2704648813607838436 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7854916482368625017, guid: cea16b7abc487ba46bb1ce0d7f5cf14d, type: 3}
