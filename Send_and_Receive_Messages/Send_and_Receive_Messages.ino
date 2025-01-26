@@ -1,7 +1,7 @@
 #include <WiFi.h>
 
 // USER DEFINED
-int MotorPins[] = {3}; // Array of motor pins
+int MotorPins[] = {5, 6, 7, 4, 19, 18}; // Array of motor pins
 // END USER DEFINED
 
 // Declare the server here
@@ -10,7 +10,7 @@ WiFiServer server(80);  // Declare server to handle the connection
 char PING[] = "PING";
 int loops = 0;
 
-int num_Motors = 1; // Calculate the length of the array
+int num_Motors = 6; // Calculate the length of the array
 // int Intensity1[num_Motors];
 int* Intensity1;  // Declare a pointer for the array
 int Desired_Motor;  // Declare the Desired_Motor variable
@@ -63,7 +63,7 @@ void loop() {
             // If Desired_Motor is out of bounds
             client.println("Error: Invalid motor number");
         }
-        delay(1000);
+        // delay(30);
     } else {
         // If message is empty or does not meet criteria
         client.println("Received: " + receivedMessage + " - it sucks!");
