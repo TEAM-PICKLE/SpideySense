@@ -52448,7 +52448,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
   - Title: Reset Sphere MR
-    Button: 2
+    Button: 4
     ButtonMode: 0
     Callback:
       m_PersistentCalls:
