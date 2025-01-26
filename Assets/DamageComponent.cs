@@ -27,7 +27,7 @@ public class DamageComponent : MonoBehaviour
     public GameObject spawnManager;
     public ObjectManager objManager;
 
-    private AudioSource m_audioSource
+    private AudioSource m_audioSource;
     public AudioClip bugSplat, catchSound;
 
     private void Awake()
