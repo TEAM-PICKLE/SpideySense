@@ -21,14 +21,14 @@ public class CalculateDistance : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(objectManager.enemies.Count > 0) {CalcuateDistanceForEachHapticPlayer();}
     }
 
     void CalcuateDistanceForEachHapticPlayer()
     {
         foreach (Transform enemy in objectManager.enemies)
         {
-            hapticManager.TriggerCloestHapticPlayer(enemy,0);
+            hapticManager.TriggerCloestHapticPlayer(enemy);
         }
     }
 }
