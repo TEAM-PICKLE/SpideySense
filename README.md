@@ -1,6 +1,7 @@
 # Spidey Sense
 Project submitted to MIT RealityHack 2025. 
 
+Gain the super power of Spidey Sense!
 Project Spidey Sense uses haptic motors - aka spidey sensors - to send spatial data straight to your cranium, no audio-visual cues needed. Our extra-sensory haptic headband lets you **FEEL** anything approaching from any direction.
 
 **Problem Statement**: In XR (Extended Reality) spaces, providing spatial and directional feedback without relying on audio or visual cues presents a significant challenge. As a result, individuals with audio-visual disabilities often struggle to navigate and interact effectively within these environments. The need for a system that communicates distance and direction through alternative sensory channels is essential.
