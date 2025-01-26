@@ -7265,7 +7265,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaeca033a80100749896e7495ddf8f4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hapticClipCollections: {fileID: 11400000, guid: 2178f1fc3dd036f419a66f372b879ec5, type: 2}
   intensity: 0
   isVibrating: 0
   range: 5
@@ -31329,7 +31328,7 @@ Transform:
   m_GameObject: {fileID: 970983306}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.05, y: 0, z: 0.08}
+  m_LocalPosition: {x: 0.06, y: 0, z: 0.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -31347,7 +31346,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaeca033a80100749896e7495ddf8f4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hapticClipCollections: {fileID: 11400000, guid: 2178f1fc3dd036f419a66f372b879ec5, type: 2}
   intensity: 0
   isVibrating: 0
   range: 5
@@ -35042,7 +35040,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaeca033a80100749896e7495ddf8f4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hapticClipCollections: {fileID: 11400000, guid: 2178f1fc3dd036f419a66f372b879ec5, type: 2}
   intensity: 0
   isVibrating: 0
   range: 5
@@ -36799,7 +36796,7 @@ Transform:
   m_GameObject: {fileID: 1129886746}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.05, y: 0, z: -0.08}
+  m_LocalPosition: {x: 0.06, y: 0, z: -0.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -36817,7 +36814,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaeca033a80100749896e7495ddf8f4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hapticClipCollections: {fileID: 11400000, guid: 2178f1fc3dd036f419a66f372b879ec5, type: 2}
   intensity: 0
   isVibrating: 0
   range: 5
@@ -38492,7 +38488,7 @@ Transform:
   m_GameObject: {fileID: 1182434356}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.05, y: 0, z: 0.08}
+  m_LocalPosition: {x: -0.06, y: 0, z: 0.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -38510,7 +38506,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaeca033a80100749896e7495ddf8f4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hapticClipCollections: {fileID: 11400000, guid: 2178f1fc3dd036f419a66f372b879ec5, type: 2}
   intensity: 0
   isVibrating: 0
   range: 5
@@ -69413,7 +69408,7 @@ Transform:
   m_GameObject: {fileID: 2113445289}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.05, y: 0, z: -0.08}
+  m_LocalPosition: {x: -0.06, y: 0, z: -0.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -69431,7 +69426,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaeca033a80100749896e7495ddf8f4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hapticClipCollections: {fileID: 11400000, guid: 2178f1fc3dd036f419a66f372b879ec5, type: 2}
   intensity: 0
   isVibrating: 0
   range: 5
