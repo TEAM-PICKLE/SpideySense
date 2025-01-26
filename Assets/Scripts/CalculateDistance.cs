@@ -28,7 +28,10 @@ public class CalculateDistance : MonoBehaviour
     {
         foreach (Transform enemy in objectManager.enemies)
         {
-            hapticManager.TriggerCloestHapticPlayer(enemy);
+            if (enemy != null)
+            {
+                hapticManager.TriggerCloestHapticPlayer(enemy);
+            }
         }
     }
 }
