@@ -27,6 +27,9 @@ public class DamageComponent : MonoBehaviour
     public GameObject spawnManager;
     public ObjectManager objManager;
 
+    private AudioSource m_audioSource
+    public AudioClip bugSplat, catchSound;
+
     private void Awake()
     {
         body = GetComponent<Rigidbody>();
@@ -34,6 +37,8 @@ public class DamageComponent : MonoBehaviour
 
         spawnManager = GameObject.Find("SpawnRig");
         objManager = spawnManager.GetComponent<ObjectManager>();
+        m_audioSource= GetComponent<AudioSource>();
+      
     }
 
     // Start is called before the first frame update
@@ -67,6 +72,7 @@ public class DamageComponent : MonoBehaviour
             damageParticles.Play();
 
             //Play Audio
+            m_audioSource.PlayOneShot(bugSplat);
 
             //Destroy Self
             Invoke("DestroySelf", 0.25f);
@@ -87,7 +93,7 @@ public class DamageComponent : MonoBehaviour
             ShowFloatingText();
 
             // Play Audio
-
+            m_audioSource.PlayOneShot(catchSound);
 
             Invoke("DestroySelf", 0.25f);
 
