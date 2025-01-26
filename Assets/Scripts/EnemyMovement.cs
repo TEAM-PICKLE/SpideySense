@@ -34,6 +34,6 @@ public class EnemyMovement : MonoBehaviour
     IEnumerator DestroyObject()
     {
         yield return new WaitForSeconds(10f);
-        Destroy(gameObject);
+        this.GetComponent<DamageComponent>().DestroySelf();
     }
 }
