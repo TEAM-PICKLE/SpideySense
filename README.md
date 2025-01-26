@@ -28,8 +28,11 @@ A detailed description of components and softwares used can be found in "PROJECT
 ### Hip Hub
 <img src="Images/Circuit Box.gif" alt="Hip Hub" width="50%"/>
 
-### Wiring Diagram
+### Wiring Diagram - ESP32
 <img src="Images/Spidey_circuit.png" alt="Circuit Design" width="\linewidth"/>
+
+### Wiring Diagram - Hip Hub
+<img src="Images/Circuit of motors.png" alt="Hip Hub" width="\linewidth"/>
 
 ## 🏷️ License
 This repository is released under the MIT license.
