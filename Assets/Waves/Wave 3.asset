@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f421c402c09c5534e9487b040af7558f, type: 3}
   m_Name: Wave 3
   m_EditorClassIdentifier: 
-  activeSpawners: 0100000000000101
+  activeSpawners: 0000000100000001
   enemySpeed:
-  - 1
   - 0
-  - 1
+  - 0
+  - 0
+  - 3
+  - 0
+  - 0
   - 0
   - 2
-  - 0
-  - 2
-  - 1

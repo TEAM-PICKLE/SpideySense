@@ -183,6 +183,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6167950130366630537}
     m_Modifications:
+    - target: {fileID: 439551074226841329, guid: cea16b7abc487ba46bb1ce0d7f5cf14d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 439551074226841329, guid: cea16b7abc487ba46bb1ce0d7f5cf14d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 439551074226841329, guid: cea16b7abc487ba46bb1ce0d7f5cf14d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 439551074226841329, guid: cea16b7abc487ba46bb1ce0d7f5cf14d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 439551074226841329, guid: cea16b7abc487ba46bb1ce0d7f5cf14d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
     - target: {fileID: 6218250860116764899, guid: cea16b7abc487ba46bb1ce0d7f5cf14d, type: 3}
       propertyPath: m_Name
       value: ButterflyMesh
