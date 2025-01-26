@@ -6495,6 +6495,111 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1023418570}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &212868438
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 212868442}
+  - component: {fileID: 212868441}
+  - component: {fileID: 212868440}
+  - component: {fileID: 212868439}
+  m_Layer: 0
+  m_Name: Sphere
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!135 &212868439
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212868438}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &212868440
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212868438}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &212868441
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212868438}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &212868442
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212868438}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &213028019
 GameObject:
   m_ObjectHideFlags: 0
@@ -7127,7 +7232,7 @@ GameObject:
   - component: {fileID: 224789753}
   - component: {fileID: 224789754}
   m_Layer: 0
-  m_Name: FrontRight
+  m_Name: 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7142,7 +7247,7 @@ Transform:
   m_GameObject: {fileID: 224789752}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.1, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7162,7 +7267,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hapticClipCollections: {fileID: 11400000, guid: 2178f1fc3dd036f419a66f372b879ec5, type: 2}
   intensity: 0
-  isVibrating: 1
+  isVibrating: 0
+  range: 5
+  distance: 0
 --- !u!1001 &227161673
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15692,53 +15799,6 @@ Transform:
   - {fileID: 1191801865}
   m_Father: {fileID: 927227925}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &506806510
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 506806511}
-  - component: {fileID: 506806512}
-  m_Layer: 0
-  m_Name: FrontLeft
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &506806511
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 506806510}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1711440639}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &506806512
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 506806510}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eaeca033a80100749896e7495ddf8f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hapticClipCollections: {fileID: 11400000, guid: 2178f1fc3dd036f419a66f372b879ec5, type: 2}
-  intensity: 0
-  isVibrating: 1
 --- !u!1001 &506923188
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21761,53 +21821,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2217626882755579194, guid: 8fb821adcaff79240b5037230fcd108b, type: 3}
   m_PrefabInstance: {fileID: 459645217}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &682289651
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 682289652}
-  - component: {fileID: 682289653}
-  m_Layer: 0
-  m_Name: BackLeft
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &682289652
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 682289651}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1711440639}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &682289653
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 682289651}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eaeca033a80100749896e7495ddf8f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hapticClipCollections: {fileID: 11400000, guid: 2178f1fc3dd036f419a66f372b879ec5, type: 2}
-  intensity: 0
-  isVibrating: 1
 --- !u!1 &685157615
 GameObject:
   m_ObjectHideFlags: 0
@@ -31301,7 +31314,7 @@ GameObject:
   - component: {fileID: 970983307}
   - component: {fileID: 970983308}
   m_Layer: 0
-  m_Name: Left
+  m_Name: 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31316,7 +31329,7 @@ Transform:
   m_GameObject: {fileID: 970983306}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.05, y: 0, z: 0.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -31336,7 +31349,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hapticClipCollections: {fileID: 11400000, guid: 2178f1fc3dd036f419a66f372b879ec5, type: 2}
   intensity: 0
-  isVibrating: 1
+  isVibrating: 0
+  range: 5
+  distance: 0
 --- !u!1 &972076859
 GameObject:
   m_ObjectHideFlags: 0
@@ -34994,7 +35009,7 @@ GameObject:
   - component: {fileID: 1082392710}
   - component: {fileID: 1082392711}
   m_Layer: 0
-  m_Name: Back
+  m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35009,7 +35024,7 @@ Transform:
   m_GameObject: {fileID: 1082392709}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.1}
+  m_LocalPosition: {x: -0.1, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -35029,7 +35044,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hapticClipCollections: {fileID: 11400000, guid: 2178f1fc3dd036f419a66f372b879ec5, type: 2}
   intensity: 0
-  isVibrating: 1
+  isVibrating: 0
+  range: 5
+  distance: 0
 --- !u!4 &1082634115 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8676909025736709989, guid: 0a9acec794f57934493ff3b1a4d333c4, type: 3}
@@ -36767,7 +36784,7 @@ GameObject:
   - component: {fileID: 1129886747}
   - component: {fileID: 1129886748}
   m_Layer: 0
-  m_Name: BackRight
+  m_Name: 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36782,7 +36799,7 @@ Transform:
   m_GameObject: {fileID: 1129886746}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.05, y: 0, z: -0.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -36802,7 +36819,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hapticClipCollections: {fileID: 11400000, guid: 2178f1fc3dd036f419a66f372b879ec5, type: 2}
   intensity: 0
-  isVibrating: 1
+  isVibrating: 0
+  range: 5
+  distance: 0
 --- !u!1 &1131890040
 GameObject:
   m_ObjectHideFlags: 0
@@ -38458,7 +38477,7 @@ GameObject:
   - component: {fileID: 1182434357}
   - component: {fileID: 1182434358}
   m_Layer: 0
-  m_Name: Right
+  m_Name: 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38473,7 +38492,7 @@ Transform:
   m_GameObject: {fileID: 1182434356}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.05, y: 0, z: 0.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -38493,7 +38512,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hapticClipCollections: {fileID: 11400000, guid: 2178f1fc3dd036f419a66f372b879ec5, type: 2}
   intensity: 0
-  isVibrating: 1
+  isVibrating: 0
+  range: 5
+  distance: 0
 --- !u!1001 &1182535568
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42654,6 +42675,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1314171327}
   - component: {fileID: 1314171326}
+  - component: {fileID: 1314171329}
+  - component: {fileID: 1314171328}
+  - component: {fileID: 1314171330}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -42700,6 +42724,53 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1314171328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1314171325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0efbd9e91515f6a4c89942865708b971, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemies:
+  - {fileID: 212868442}
+--- !u!114 &1314171329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1314171325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6505b2415dc7bab479eb7f21562bd839, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hapticPlayers:
+  - {fileID: 2113445291}
+  - {fileID: 1082392711}
+  - {fileID: 1182434358}
+  - {fileID: 970983308}
+  - {fileID: 224789754}
+  - {fileID: 1129886748}
+  singularityManager: {fileID: 1314171326}
+--- !u!114 &1314171330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1314171325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e75d121f1d1fd33498969a58a78bef44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hapticManager: {fileID: 1314171329}
 --- !u!4 &1314851538 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6641846770912371149, guid: 189d934ab5c4c084e98bb486dda5bf68, type: 3}
@@ -55741,6 +55812,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 0}
+  isGlobal: 0
+  blendDistance: 0
+  weight: 1
+  priority: 0
 --- !u!1001 &1668033747
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56823,8 +56899,6 @@ Transform:
   - {fileID: 970983307}
   - {fileID: 224789753}
   - {fileID: 1129886747}
-  - {fileID: 682289652}
-  - {fileID: 506806511}
   m_Father: {fileID: 1030053170}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &1711440640
@@ -66798,60 +66872,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 6790301}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2021052625
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2021052627}
-  - component: {fileID: 2021052626}
-  m_Layer: 0
-  m_Name: Script
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2021052626
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2021052625}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6505b2415dc7bab479eb7f21562bd839, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hapticPlayers:
-  - {fileID: 2113445291}
-  - {fileID: 1082392711}
-  - {fileID: 1182434358}
-  - {fileID: 970983308}
-  - {fileID: 224789754}
-  - {fileID: 1129886748}
-  - {fileID: 682289653}
-  - {fileID: 506806512}
-  singularityManager: {fileID: 1314171326}
---- !u!4 &2021052627
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2021052625}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2021504072
 GameObject:
   m_ObjectHideFlags: 0
@@ -69378,7 +69398,7 @@ GameObject:
   - component: {fileID: 2113445290}
   - component: {fileID: 2113445291}
   m_Layer: 0
-  m_Name: Front
+  m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -69393,7 +69413,7 @@ Transform:
   m_GameObject: {fileID: 2113445289}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.1}
+  m_LocalPosition: {x: -0.05, y: 0, z: -0.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -69413,7 +69433,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hapticClipCollections: {fileID: 11400000, guid: 2178f1fc3dd036f419a66f372b879ec5, type: 2}
   intensity: 0
-  isVibrating: 1
+  isVibrating: 0
+  range: 5
+  distance: 0
 --- !u!1001 &2115549582
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -70641,5 +70663,5 @@ SceneRoots:
   - {fileID: 461339370}
   - {fileID: 2099939117}
   - {fileID: 656878656}
-  - {fileID: 2021052627}
   - {fileID: 1314171327}
+  - {fileID: 212868442}
