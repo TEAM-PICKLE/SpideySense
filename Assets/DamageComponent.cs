@@ -1,3 +1,5 @@
+using Oculus.Haptics;
+using Oculus.Interaction.Input;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -29,7 +31,8 @@ public class DamageComponent : MonoBehaviour
 
     private AudioSource m_audioSource;
     public AudioClip bugSplat, catchSound;
-
+    [SerializeField] Oculus.Haptics.HapticClip catchHaptic;
+    Oculus.Haptics.HapticClipPlayer player;
     private void Awake()
     {
         body = GetComponent<Rigidbody>();
@@ -38,7 +41,8 @@ public class DamageComponent : MonoBehaviour
         spawnManager = GameObject.Find("SpawnRig");
         objManager = spawnManager.GetComponent<ObjectManager>();
         m_audioSource= GetComponent<AudioSource>();
-      
+
+        player = new HapticClipPlayer(catchHaptic);
     }
 
     // Start is called before the first frame update
@@ -94,6 +98,8 @@ public class DamageComponent : MonoBehaviour
 
             // Play Audio
             m_audioSource.PlayOneShot(catchSound);
+            Oculus.Haptics.Controller controller = collision.gameObject.GetComponent<HandSaber>().controller;
+            player.Play(controller);
 
             Invoke("DestroySelf", 0.25f);
 

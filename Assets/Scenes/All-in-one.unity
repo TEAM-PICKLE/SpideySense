@@ -38918,6 +38918,7 @@ GameObject:
   - component: {fileID: 1309730735}
   - component: {fileID: 1309730734}
   - component: {fileID: 1309730738}
+  - component: {fileID: 1309730739}
   m_Layer: 0
   m_Name: LeftHandSaber
   m_TagString: PlayerSaber
@@ -39038,6 +39039,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &1309730739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309730732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee1ad11f92e150b4b98d4b9e7e13e6ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: 0
 --- !u!4 &1310758575 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4834784344446885606, guid: e7947a95fcb57fe49bcb059c44855d67, type: 3}
@@ -54252,6 +54266,7 @@ GameObject:
   - component: {fileID: 1795171833}
   - component: {fileID: 1795171832}
   - component: {fileID: 1795171835}
+  - component: {fileID: 1795171836}
   m_Layer: 0
   m_Name: RightHandSaber
   m_TagString: PlayerSaber
@@ -54372,6 +54387,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &1795171836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795171830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee1ad11f92e150b4b98d4b9e7e13e6ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: 1
 --- !u!1 &1798069381
 GameObject:
   m_ObjectHideFlags: 0
