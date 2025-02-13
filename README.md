@@ -1,8 +1,7 @@
 # Spidey Sense
 Project submitted to MIT RealityHack 2025. 
 
-<video src="https://github.com/TEAM-PICKLE/SpideySense/blob/main/Images/Projectspideysense.mp4" />
-
+https://github.com/TEAM-PICKLE/SpideySense/blob/main/Images/Projectspideysense.mp4
 
 Gain the super power of Spidey Sense!
 Project Spidey Sense uses haptic motors - aka spidey sensors - to send spatial data straight to your cranium, no audio-visual cues needed. Our extra-sensory haptic headband lets you **FEEL** anything approaching from any direction.
