@@ -1,7 +1,7 @@
 # Spidey Sense
 Project submitted to MIT RealityHack 2025. 
 
-<video src="https://github.com/TEAM-PICKLE/SpideySense/blob/main/Images/Projectspideysense.mp4" width="300" />
+<video src="https://github.com/TEAM-PICKLE/SpideySense/blob/main/Images/Projectspideysense.mp4" />
 
 
 Gain the super power of Spidey Sense!
